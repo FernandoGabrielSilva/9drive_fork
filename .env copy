@@ -3,6 +3,12 @@ MYSQL_DATABASE=9drive
 MYSQL_USER=9drive
 MYSQL_PASSWORD=change-this-database-password
 
+# For local Docker MySQL (optional)
+# DATABASE_URL=mysql://9drive:change-this-database-password@localhost:3306/9drive
+
+# For NeonDB PostgreSQL (Render deployment) - REPLACE WITH YOUR NEON CONNECTION STRING
+DATABASE_URL=postgresql://user:password@ep-xxx.us-east-1.aws.neon.tech/neondb?sslmode=require
+
 FRONTEND_URL=http://localhost:5173
 VITE_API_URL=http://localhost:4000
 VITE_RECAPTCHA_SITE_KEY=
@@ -16,4 +22,3 @@ GOOGLE_CLIENT_ID=your-google-client-id
 GOOGLE_CLIENT_SECRET=your-google-client-secret
 GOOGLE_REDIRECT_URI=http://localhost:4000/connected-accounts/google/callback
 RECAPTCHA_SECRET_KEY=
-DATABASE_URL=postgresql://neondb_owner:npg_Gt5fi1XYKDFQ@ep-purple-flower-b6qggo7k-pooler.c-2.sa-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
